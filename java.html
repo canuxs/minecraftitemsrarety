@@ -104,7 +104,7 @@
 
     <!-- Navigasyon Barı -->
     <nav class="navbar">
-        <a href="#" class="back-btn">⬅ Go Back</a>
+        <a href="index.html" class="back-btn">⬅ Go Back</a>
     </nav>
 
     <!-- Tablo Alanı -->
@@ -127,32 +127,32 @@
     <script>
         // Minecraft Wiki Java Edition Tüm Blok ve Eşya ID'leri (Entityler Hariç)
         const mcItems = [
-            "minecraft:air", "minecraft:stone", "minecraft:granite", "minecraft:polished_granite", 
-            "minecraft:diorite", "minecraft:polished_diorite", "minecraft:andesite", "minecraft:polished_andesite", 
-            "minecraft:grass_block", "minecraft:dirt", "minecraft:coarse_dirt", "minecraft:podzol", 
-            "minecraft:crimson_nylium", "minecraft:warped_nylium", "minecraft:cobblestone", "minecraft:oak_planks", 
-            "minecraft:spruce_planks", "minecraft:birch_planks", "minecraft:jungle_planks", "minecraft:acacia_planks", 
-            "minecraft:dark_oak_planks", "minecraft:mangrove_planks", "minecraft:cherry_planks", "minecraft:bamboo_planks", 
-            "minecraft:crimson_planks", "minecraft:warped_planks", "minecraft:bamboo_mosaic", "minecraft:oak_sapling", 
-            "minecraft:spruce_sapling", "minecraft:birch_sapling", "minecraft:jungle_sapling", "minecraft:acacia_sapling", 
-            "minecraft:dark_oak_sapling", "minecraft:mangrove_propagule", "minecraft:cherry_sapling", "minecraft:bedrock", 
-            "minecraft:sand", "minecraft:red_sand", "minecraft:gravel", "minecraft:gold_ore", "minecraft:deepslate_gold_ore", 
-            "minecraft:iron_ore", "minecraft:deepslate_iron_ore", "minecraft:coal_ore", "minecraft:deepslate_coal_ore", 
-            "minecraft:nether_gold_ore", "minecraft:lapis_ore", "minecraft:deepslate_lapis_ore", "minecraft:lapis_block", 
-            "minecraft:dispenser", "minecraft:sandstone", "minecraft:chiseled_sandstone", "minecraft:cut_sandstone", 
-            "minecraft:note_block", "minecraft:sticky_piston", "minecraft:cobweb", "minecraft:short_grass", "minecraft:fern", 
-            "minecraft:dead_bush", "minecraft:seagrass", "minecraft:sea_pickle", "minecraft:piston", "minecraft:white_wool", 
-            "minecraft:orange_wool", "minecraft:magenta_wool", "minecraft:light_blue_wool", "minecraft:yellow_wool", 
-            "minecraft:lime_wool", "minecraft:pink_wool", "minecraft:gray_wool", "minecraft:light_gray_wool", 
-            "minecraft:cyan_wool", "minecraft:purple_wool", "minecraft:blue_wool", "minecraft:brown_wool", 
-            "minecraft:green_wool", "minecraft:red_wool", "minecraft:black_wool", "minecraft:dandelion", 
-            "minecraft:poppy", "minecraft:blue_orchid", "minecraft:allium", "minecraft:azure_bluet", 
-            "minecraft:red_tulip", "minecraft:orange_tulip", "minecraft:white_tulip", "minecraft:pink_tulip", 
+            "minecraft:air    0", "minecraft:stone    13", "minecraft:granite    3", "minecraft:polished_granite    5", 
+            "minecraft:diorite    3", "minecraft:polished_diorite    5", "minecraft:andesite    3", "minecraft:polished_andesite    5", 
+            "minecraft:grass_block    12", "minecraft:dirt    1", "minecraft:coarse_dirt    5", "minecraft:podzol    8", 
+            "minecraft:crimson_nylium    8", "minecraft:warped_nylium    9", "minecraft:cobblestone    2", "minecraft:oak_planks    2", 
+            "minecraft:spruce_planks    3", "minecraft:birch_planks    3", "minecraft:jungle_planks    3", "minecraft:acacia_planks    3", 
+            "minecraft:dark_oak_planks    3", "minecraft:mangrove_planks    6", "minecraft:cherry_planks    4", "minecraft:bamboo_planks    4", 
+            "minecraft:crimson_planks    3", "minecraft:warped_planks    8", "minecraft:bamboo_mosaic    5", "minecraft:oak_sapling    4", 
+            "minecraft:spruce_sapling    4", "minecraft:birch_sapling    4", "minecraft:jungle_sapling    5", "minecraft:acacia_sapling    5", 
+            "minecraft:dark_oak_sapling    4", "minecraft:mangrove_propagule    6", "minecraft:cherry_sapling    4", "minecraft:bedrock    52", 
+            "minecraft:sand    3", "minecraft:red_sand    4", "minecraft:gravel    6", "minecraft:gold_ore    15", "minecraft:deepslate_gold_ore    17", 
+            "minecraft:iron_ore    13", "minecraft:deepslate_iron_ore    15", "minecraft:coal_ore    11", "minecraft:deepslate_coal_ore    13", 
+            "minecraft:nether_gold_ore    21", "minecraft:lapis_ore    25", "minecraft:deepslate_lapis_ore    27", "minecraft:lapis_block    5", 
+            "minecraft:dispenser    10", "minecraft:sandstone    6", "minecraft:chiseled_sandstone    7", "minecraft:cut_sandstone    7", 
+            "minecraft:note_block    9", "minecraft:sticky_piston    9", "minecraft:cobweb    9", "minecraft:short_grass    1", "minecraft:fern    7", 
+            "minecraft:dead_bush    4", "minecraft:seagrass    5", "minecraft:sea_pickle    9", "minecraft:piston    8", "minecraft:white_wool    2", 
+            "minecraft:orange_wool    3", "minecraft:magenta_wool    3", "minecraft:light_blue_wool    3", "minecraft:yellow_wool    3", 
+            "minecraft:lime_wool    3", "minecraft:pink_wool    3", "minecraft:gray_wool    2", "minecraft:light_gray_wool    2", 
+            "minecraft:cyan_wool    3", "minecraft:purple_wool    3", "minecraft:blue_wool    3", "minecraft:brown_wool    2", 
+            "minecraft:green_wool    3", "minecraft:red_wool    3", "minecraft:black_wool    2", "minecraft:dandelion    2", 
+            "minecraft:poppy    2", "minecraft:blue_orchid    2", "minecraft:allium    2", "minecraft:azure_bluet    2", 
+            "minecraft:red_tulip    2", "minecraft:orange_tulip    2", "minecraft:white_tulip    2", "minecraft:pink_tulip    2", 
             "minecraft:oxeye_daisy", "minecraft:cornflower", "minecraft:lily_of_the_valley", "minecraft:wither_rose", 
-            "minecraft:torchflower", "minecraft:pitcher_plant", "minecraft:brown_mushroom", "minecraft:red_mushroom", 
-            "minecraft:gold_block", "minecraft:iron_block", "minecraft:bricks", "minecraft:tnt", "minecraft:bookshelf", 
-            "minecraft:chiseled_bookshelf", "minecraft:mossy_cobblestone", "minecraft:obsidian", "minecraft:torch", 
-            "minecraft:end_rod", "minecraft:chorus_plant", "minecraft:chorus_flower", "minecraft:purpur_block", 
+            "minecraft:torchflower    8", "minecraft:pitcher_plant    8", "minecraft:brown_mushroom    4", "minecraft:red_mushroom    4", 
+            "minecraft:gold_block    5", "minecraft:iron_block    4", "minecraft:bricks    12", "minecraft:tnt    5", "minecraft:bookshelf    3", 
+            "minecraft:chiseled_bookshelf    4", "minecraft:mossy_cobblestone    3", "minecraft:obsidian    5", "minecraft:torch    3", 
+            "minecraft:end_rod    15", "minecraft:chorus_plant", "minecraft:chorus_flower", "minecraft:purpur_block", 
             "minecraft:purpur_pillar", "minecraft:purpur_stairs", "minecraft:spawner", "minecraft:chest", 
             "minecraft:crafting_table", "minecraft:farmland", "minecraft:furnace", "minecraft:ladder", 
             "minecraft:rail", "minecraft:cobblestone_stairs", "minecraft:lever", "minecraft:stone_pressure_plate", 
